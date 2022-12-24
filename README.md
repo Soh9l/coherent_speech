@@ -1,8 +1,7 @@
 ## 🎙️ Coherent Speech
 
 
-![Coherent_Speech_2](https://user-images.githubusercontent.com/118684884/209433692-5756cf6f-6da1-4b53-8e8d-34c3518fa0af.PNG) ![DALL·E 2 Futuristic Cyborg](https://user-images.githubusercontent.com/118684884/209433655-090565b6-5cab-4d6e-a507-998d8534a879.png)
-
+![Coherent_Speech_2](https://user-images.githubusercontent.com/118684884/209433692-5756cf6f-6da1-4b53-8e8d-34c3518fa0af.PNG)
 
 
 
