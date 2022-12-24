@@ -1,7 +1,8 @@
 ## 🎙️ Coherent Speech
 
 
-![Coherent_Speech_2](https://user-images.githubusercontent.com/118684884/209433692-5756cf6f-6da1-4b53-8e8d-34c3518fa0af.PNG)
+![Coherent_Speech_2](https://user-images.githubusercontent.com/118684884/209433692-5756cf6f-6da1-4b53-8e8d-34c3518fa0af.PNG) ![DALL·E 2 Futuristic Cyborg](https://user-images.githubusercontent.com/118684884/209433655-090565b6-5cab-4d6e-a507-998d8534a879.png)
+
 
 
 
@@ -12,7 +13,6 @@ Using the power of [whiper](https://github.com/openai/whisper), [co;her](https:/
 
 Please do try it yourself and help to more improvising the [App](https://huggingface.co/spaces/S0h9l/Coherent_Speech)("Caution:Might need Cohere API Key ")
 
-![DALL·E 2 Futuristic Cyborg](https://user-images.githubusercontent.com/118684884/209433655-090565b6-5cab-4d6e-a507-998d8534a879.png)
 
 ## Requirements
 * cohere
