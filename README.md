@@ -9,7 +9,8 @@ Multilingual voice content generator, powered by [co;her](https://cohere.ai/)(�
 
 Using the power of [whiper](https://github.com/openai/whisper), [co;her](https://cohere.ai/)(💜+🤖) and google to create speech content generator.
 
-Please do try it yourself and help to more improvise [it](https://huggingface.co/spaces/S0h9l/Coherent_Speech)Hugging Face's logo
+Please do try it yourself and help to more improvising the [App](https://huggingface.co/spaces/S0h9l/Coherent_Speech)("Caution:Might need Cohere API Key ")
+
 
 ## Requirements
 * cohere
@@ -19,9 +20,11 @@ Please do try it yourself and help to more improvise [it](https://huggingface.co
 * whisper
 
 
+
 ## Short Demo video:
 
 https://user-images.githubusercontent.com/118684884/209414386-d18620a5-cace-404e-b274-98b37caf0a38.mp4
+
 
 ## Author
 🎙️ Coherent Speech Application was made by Mohammad Sohel Qureshi, a Reporting & Data Analyst
@@ -29,8 +32,13 @@ https://user-images.githubusercontent.com/118684884/209414386-d18620a5-cace-404e
 Connect with me on [Linkedin](https://www.linkedin.com/in/mohd-sohel-qureshi/)!
 
 ## Acknowledgements
-This app was made during the Cohere AI Hackathon, in which
-Cohere and Lablab.ai offered access to Cohere Classify and Generate
-APIs for novel uses. Thank you to both groups for their assistance and mentorship.
+
+Special Thanks to [LabLab.ai](https://lablab.ai/)🚀 Team for the opportunity.
+
+This app was made during the Semantic Search AI Hackathon, in which
+[Lablab.ai](https://lablab.ai/)🚀 offered access to Cohere Generate
+APIs on trail basis for hackathon purpose only. 
+
+
 
 
