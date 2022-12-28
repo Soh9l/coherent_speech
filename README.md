@@ -8,7 +8,7 @@
 
 Multilingual voice content generator, powered by [co;her](https://cohere.ai/)(💜+🤖) Generate model.
 
-Using the power of [whiper](https://github.com/openai/whisper), [co;her](https://cohere.ai/)(💜+🤖) and google to create speech content generator.
+Using the power of [whisper](https://github.com/openai/whisper), [co;her](https://cohere.ai/)(💜+🤖) and google to create speech content generator.
 
 Please do try it yourself and help in improvising further more the 🚀[Demo App](https://huggingface.co/spaces/S0h9l/Coherent_Speech)("Caution:Might need Cohere API Key ")
 
