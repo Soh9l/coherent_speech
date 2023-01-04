@@ -7,14 +7,14 @@ import gtts.langs
 #from dotenv import load_dotenv
 
 #load_dotenv()
-co = cohere.Client({'api_key'})
 
-model = whisper.load_model("tiny")
+model = whisper.load_model("base")
 
 LANGUAGES = list(gtts.lang.tts_langs())
 
-def transcribe(audio,language):
-    
+def transcribe(api,audio,language):
+    co = cohere.Client(api) 
+
     #time.sleep(3)
     # load audio and pad/trim it to fit 30 seconds
     audio = whisper.load_audio(audio)
@@ -34,8 +34,8 @@ def transcribe(audio,language):
     #cohere
     response = co.generate(
     model='xlarge',
-    prompt=f'This program will generate an introductory paragraph to a blog post given a blog title, audience, and tone of voice.\n--\nBlog Title: Best Activities in Toronto\nAudience: Millennials\nTone of Voice: Lighthearted\nFirst Paragraph: Looking for fun things to do in Toronto? When it comes to exploring Canada\'s largest city, there\'s an ever-evolving set of activities to choose from. Whether you\'re looking to visit a local museum or sample the city\'s varied cuisine, there is plenty to fill any itinerary. In this blog post, I\'ll share some of my favorite recommendations\n--\nBlog Title: Mastering Dynamic Programming\nAudience: Developers\nTone: Informative\nFirst Paragraph: In this piece, we\'ll help you understand the fundamentals of dynamic programming, and when to apply this optimization technique. We\'ll break down bottom-up and top-down approaches to solve dynamic programming problems.\n--\nBlog Title: {result.text}\nAudience: Athletes\nTone: Enthusiastic\nFirst Paragraph:',
-    max_tokens=150,
+    prompt=f'This program will generate an introductory paragraph to a blog post given a blog title, audience, and tone of voice.\n--\nBlog Title: Best Activities in Toronto\nAudience: Millennials\nTone of Voice: Lighthearted\nFirst Paragraph: Looking for fun things to do in Toronto? When it comes to exploring Canada\'s largest city, there\'s an ever-evolving set of activities to choose from. Whether you\'re looking to visit a local museum or sample the city\'s varied cuisine, there is plenty to fill any itinerary. In this blog post, I\'ll share some of my favorite recommendations\n--\nBlog Title: Mastering Dynamic Programming\nAudience: Developers\nTone: Informative\nFirst Paragraph: In this piece, we\'ll help you understand the fundamentals of dynamic programming, and when to apply this optimization technique. We\'ll break down bottom-up and top-down approaches to solve dynamic programming problems.\n--\nBlog Title: How to Get Started with Rock Climbing\nAudience: Athletes\nTone: Enthusiastic\nFirst Paragraph:If you\'re an athlete who\'s looking to learn how to rock climb, then you\'ve come to the right place! This blog post will give you all the information you need to know about how to get started in the sport. Rock climbing is a great way to stay active and challenge yourself in a new way. It\'s also a great way to make new friends and explore new places. So, what are you waiting for? Get out there and start climbing!\n--\nBlog Title: {result.text}\nAudience: Engineers\nTone: Enthusiastic\nFirst Paragraph:',
+    max_tokens=200,
     temperature=0.8,
     k=0,
     p=1,
@@ -56,9 +56,10 @@ def transcribe(audio,language):
 
 
 gr.Interface(
-    title = 'OpenAI Whisper ASR Gradio Web UI', 
+    title = 'Coherent Speech', 
     fn=transcribe, 
     inputs=[
+        gr.inputs.Textbox(lines=1, label="Enter your Cohere API Key"),
         gr.inputs.Audio(source="microphone", type="filepath"), 
             gr.Radio(label="Language", choices=LANGUAGES, value="en")
     ],
